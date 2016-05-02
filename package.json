@@ -27,12 +27,14 @@
     "browserify": "^13.0.0",
     "handlebars": "^4.0.5",
     "hbsfy": "^2.7.0",
+    "http-server": "^0.9.0",
     "node-sass": "^3.6.0",
+    "watch": "^0.18.0",
     "watchify": "^3.7.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -t hbsfy src/app/app.js > build/assets/js/bundle.js"
+    "watch": "http-server build & watch 'echo recompilando && browserify -t hbsfy src/app/app.js > build/assets/js/bundle.js && echo listo!' src/ -d"
   },
   "repository": {
     "type": "git",
