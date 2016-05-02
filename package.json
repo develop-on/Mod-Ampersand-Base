@@ -1,0 +1,52 @@
+{
+  "name": "mod-ampersand-base",
+  "version": "0.1.0",
+  "description": "Ampersand boilerplate from OvniOn",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ampersand-app": "^1.0.4",
+    "ampersand-form-view": "^6.0.0",
+    "ampersand-input-view": "^6.0.0",
+    "ampersand-model": "^7.0.0",
+    "ampersand-rest-collection": "^5.0.0",
+    "ampersand-router": "^3.0.2",
+    "ampersand-view": "^10.0.0",
+    "ampersand-view-switcher": "^2.1.0",
+    "domify": "^1.4.0",
+    "domready": "^1.0.8",
+    "favicon-setter": "file:///home/santiago/Code/blah/blahf/node_modules/favicon-setter",
+    "local-links": "^1.4.0",
+    "lodash.bind": "^4.1.3",
+    "lodash.foreach": "^4.2.0",
+    "lodash.result": "^4.3.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "handlebars": "^4.0.5",
+    "hbsfy": "^2.7.0",
+    "node-sass": "^3.6.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t hbsfy src/app/app.js > build/assets/js/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovnion/Mod-Ampersand-Base.git"
+  },
+  "keywords": [
+    "ampersand",
+    "boilerplate",
+    "spa"
+  ],
+  "author": "Santiago Gil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ovnion/Mod-Ampersand-Base/issues"
+  },
+  "homepage": "https://github.com/ovnion/Mod-Ampersand-Base#readme"
+}
